@@ -19,4 +19,5 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include(('blog.urls', 'blog'), namespace='blog')),   #注意此处传入的参数，分解器中传入的是一个二元元组
+    url(r'^account/',include('account.urls', namespace='account', app_name='account')),
 ]

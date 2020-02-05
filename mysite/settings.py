@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',     # 添加自己的项目应用
+    'account',
 ]
 
 MIDDLEWARE = [
